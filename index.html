@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - Tu Nombre</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>"
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo"><img src="img/Diseño.png" alt=""></div>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#acerca">Acerca de Mí</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#formacion">Formación Académica</a></li>
+                    <li><a href="#experiencia">Experiencia Profesional</a></li>
+                    <li><a href="#contactForm">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Header (Inicio) -->
+        <header id="inicio" class="header">
+            <div class="container">
+                <h1>BIENVENIDO A MI PORTFOLIO! </h1>
+                <p> Hola mi nombre es Matias y actualmente estoy participando del proyecto ORACLE ONE de Alura Latam.</p>
+            </div>
+        </header>
+        <main>
+            <!-- Acerca de Mí -->
+            <section id="acerca" class="section">
+                <div class="container">
+                    <h2>ACERCA DE MI</h2>
+                    <p>Hola, soy Matias , un apasionado diseñador de paginas web. Actialmente tengo 32 años y he desarrollado habilidades sólidas en HTML,CSS,JS y PHYTON. Ademas poseo conocimientos basicos en Photoshop</p>
+                    <p>Mi enfoque se centra en el desarrollado y funcionamiento de paginas web, buscando siempre superar los desafíos con creatividad y dedicación.</p>
+                    
+                    <h2>¿POR QUE TRABAJAR CONMIGO?</h2>
+                    <p>   
+                        <ul>
+                            <li>Ganas de trabajar</li>
+
+                            <li> Creatividad :
+                                Como dicen los de Apple, piensa diferente. En un mundo en el que todas las marcas quieres destacar es imprescindible destacar de alguna forma y eso es algo que siempre intento. No llego al nivel de los cracks de Netflix ni mucho menos, pero siempre busco la originalidad
+                            </li>
+                    
+                            <li>Espíritu emprendedor :
+                                Aunque no las saque a la luz siempre hay algún proyecto que otro apuntado en las notas del móvil.
+                            </li>
+                            <li>Aprendizaje rápido :
+                                 Me considero una persona en constante aprendizaje, que considera que nunca se sabe suficiente sobre algo y que siempre se puede mejora
+                            </li>
+                        </ul>
+
+                    </p>
+                </div>
+            </section>
+
+            <!-- Hobbies -->
+            <section id="hobbies" class="section">
+                <div class="hobbies">
+                    <h2>HOBBIES</h2>
+                    <div class="hobbies-icons">
+                        <span>🏋️‍♂️</span>
+                        <span>🍳</span>
+                        <span>📺</span>
+                        <span>🎧</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Formación Académica -->
+            <section id="formacion" class="section">
+                <div class="formacion">
+                    <h2>FORMACION ACADEMICA</h2>
+                    <div class="logos">
+                        <img src="img/html-logo.png" alt="HTML">
+                        <img src="img/css-logo.png" alt="CSS">
+                        <img src="img/js-logo.png" alt="JavaScript">
+                        <img src="img/python-logo.png" alt="Python">
+                        <img src="img/ps.png" alt="Photoshop">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experiencia en Programacion -->
+            <section id="experiencia" class="section">
+                <div class="ExProgramacion">
+                    <h2>EXPERIENCIA PROFESIONAL</h2>
+                    <article class="proyecto">
+                        <h3>Adivina el numero Secreto</h3>
+                        <p id="descripcion">Debes adivinar un numero entre 1 y 50</p>
+                        <figure>
+                        <img src="img/adivina.png" alt="Adivina el numero Secreto">
+                        <figcaption>Adolencete pensando cual puede ser el numero Secreto</figcaption>
+                        <a href="https://github.com/Gcidmatias/Numero-Secreto" target="_blank">
+                            <i class="fab fa-github"></i> Ver repositorio en GitHub
+                        </a>
+                        </figure>
+                    </article>
+                    <article class="proyecto">
+                        <h3>Encriptador de Textos y Numeros</h3>
+                        <p id="descripcion"></p>
+                        <figure>
+                        <img src="img/encriptador.png" alt="Encriptador">
+                        <figcaption>Candado encriptador de textos y numeros.</figcaption>
+                        <a href="https://github.com/Gcidmatias/EncriptadorTyN" target="_blank">
+                            <i class="fab fa-github"></i> Ver repositorio en GitHub
+                        </a>
+                        </figure>
+                    </article>
+                </div>   
+
+            </section>
+            <!-- Contacto -->
+            <div class="container">
+                <h2>CONTACTO</h2>
+                <form id="contactForm" novalidate>
+                  <div class="form-group">
+                    <label for="nombre">Nombre <span>(Max. 50 caracteres)</span></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required maxlength="50">
+                    <div class="error-msg" id="errorNombre"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Ej. ejemplo@dominio.com" required>
+                    <div class="error-msg" id="errorEmail"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej. 555-1234" required>
+                    <div class="error-msg" id="errorTelefono"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="mensaje">Mensaje <span>(Max. 300 caracteres)</span></label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required maxlength="300"></textarea>
+                    <div class="error-msg" id="errorMensaje"></div>
+                  </div>
+                  <button type="submit" id="submitBtn" disabled>Enviar</button>
+                </form>
+              </div>
+            </section>
+        </main>
+        
+        <footer>
+            <img src="img/footer1.png" alt="Logo Portfolio">
+            <p class="CopyRight">Desarrollado por Gcidmatias 2024</p>
+            <p class="CopyRight">Soluciones tecnológicas que hacen la diferencia</p>
+        </footer>
+    </body>
+</html>
+
